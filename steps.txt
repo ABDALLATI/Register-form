@@ -1,0 +1,4 @@
+fullname => letters , space, capitalize
+email => email
+phone => 010,011,012,015 => 8 digit
+password => ,min 8 
