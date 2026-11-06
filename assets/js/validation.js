@@ -18,15 +18,16 @@ function checkPhone(value) {
   return phonePattern.test(value);
 }
 function checkPassword(value) {
-  let passwordPattern = /^[a-zA-Z0-9]{5,9}$/;
+  let passwordPattern = /^(?=.*[A-Z])(?=.*\d)[a-zA-Z0-9]{5,9}$/;
   return passwordPattern.test(value);
 }
 function checkconfpass(value) {
   let confPassPattern = /^[a-zA-Z0-9]{5,9}$/;
+
   return confPassPattern.test(value);
 }
 
 function checkRequiredStyle(input, spanId, message) {
-  input.style.borderColor = "red";
+  input.style.borderColor = "red"; // green
   document.querySelector(spanId).innerText = message;
 }
